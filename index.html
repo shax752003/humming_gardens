@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humming gardens</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <span class="material-symbols-outlined" onclick="hideMenu()">
+            close
+          </span>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">FLOORPLANS</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showMenu()">
+          menu
+        </span>
+      </nav>
+      <div class="text-box">
+        <h1>Fascinating luxarious villas</h1>
+        <p>
+          The renowned real-estate developer, Alliance Group, presents an
+          esteemed project of independent villas in Chennai's OMR.<br />
+          Our vision is to create a harmonious community, offering residents
+          tranquility and peace, far from the chaos of urban life, yet deeply
+          connected to the serenity of nature.
+        </p>
+        <a href="" class="hero-btn">Visit us to know more</a>
+      </div>
+    </section>
+
+    <!-- floorplan -->
+    <section class="floorplan">
+        <h1>
+            Unit Types  
+        </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur blanditiis minima numquam facilis magni, beatae repellat culpa iste maiores ea?</p>
+    </section>
+
+      
+
+    <!-- js for toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-300px";
+      }
+    </script>
+  </body>
+</html>
